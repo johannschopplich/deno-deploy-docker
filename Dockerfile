@@ -10,7 +10,7 @@ RUN deno cache https://deno.land/x/deploy/src/runtime.bundle.js
 
 COPY . .
 
-# Compile the main app so that it doesn't need to be compiled each startup/entry
+# Prevent compilation at each startup/entry
 RUN deno cache main.js
 
 CMD ["deployctl", "run", "--no-check", "main.js"]
