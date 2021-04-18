@@ -24,10 +24,10 @@ To run in docker, first build the app:
 docker build -t app .
 ```
 
+All dependencies of your Deno script will be pre-cached into the Docker container.
+
 Then run the container:
 
 ```shell
 docker run -it --init -p 8080:8080 app
 ```
-
-The dockerfile will pre-cache all dependencies.
