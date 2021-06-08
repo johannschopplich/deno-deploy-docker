@@ -1,6 +1,6 @@
-FROM hayd/alpine-deno:1.10.2
+FROM denoland/deno:1.10.3
 
-EXPOSE 8080
+EXPOSE 1993
 WORKDIR /app
 # USER deno
 

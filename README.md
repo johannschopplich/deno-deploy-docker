@@ -29,5 +29,5 @@ All dependencies of your Deno script will be pre-cached into the Docker containe
 Then run the container:
 
 ```shell
-docker run -it --init -p 8080:8080 app
+docker run -it --init -p 1993:1993 app
 ```
